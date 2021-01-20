@@ -1,3 +1,3 @@
 <?php
 
-echo "good night would";
+echo "good";
