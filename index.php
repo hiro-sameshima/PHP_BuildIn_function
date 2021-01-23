@@ -11,7 +11,6 @@ echo $info . PHP_EOL;
 
 
 $info = sprintf("[%15s][%10.2f]",  $name , $score);
-
 echo $info . PHP_EOL;
 //[          Apple][     32.25]
 
@@ -38,3 +37,10 @@ echo $info . PHP_EOL;
 
 [Apple          ][0000032.25]
 */
+
+
+//指定したフォーマットでの表示(戻り値が必要ならsprintf、出力だけが目的ならprintf)
+
+$info = printf("[%-15s][%010.2f]",  $name , $score);
+echo $info . PHP_EOL;
+
